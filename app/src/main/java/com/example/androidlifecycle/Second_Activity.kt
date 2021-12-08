@@ -2,12 +2,18 @@ package com.example.androidlifecycle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_second.*
 
 class Second_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
+//        val bundle:Bundle = intent.extras!!
+//       val kl:Int = bundle.getInt("image")
+//        imageView2.setImageResource(kl)
+
         Toast.makeText(this, "Second onCreate() Called", Toast.LENGTH_SHORT).show()
     }
     override fun onStart() {

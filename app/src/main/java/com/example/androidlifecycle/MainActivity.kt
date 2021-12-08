@@ -3,7 +3,9 @@ package com.example.androidlifecycle
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +16,8 @@ class MainActivity : AppCompatActivity() {
     }
     fun first(view: android.view.View) {
         val intent  = Intent(this,Second_Activity::class.java)
+//        intent.putExtra("image",R.drawable.ic_launcher_foreground)
+
         startActivity(intent)
     }
     override fun onStart() {
